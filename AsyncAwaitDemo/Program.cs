@@ -20,6 +20,7 @@ namespace AsyncAwaitDemo
 
             await Task.WhenAll(tasks);
 
+            // stopping the stop watch
             stopwatch.Stop();
             Console.WriteLine("Time took to execute: " + stopwatch.Elapsed.TotalSeconds);
 
